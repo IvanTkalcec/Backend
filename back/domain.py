@@ -5,7 +5,6 @@ from uuid import uuid4 as gid, UUID
 class Kolegiji:
     @db_session()
     def listaj():
-        # ORM upit
         q = select(s for s in Kolegij)
         def dohvati_veze_profesora(x):
             if "profesori" in x:
